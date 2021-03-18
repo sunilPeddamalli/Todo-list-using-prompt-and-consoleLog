@@ -1,4 +1,4 @@
-let text = prompt('What would you like to do');
+let text = prompt('What would you like to do - new,list,delete,quit');
 
 const todoList = [];
 
