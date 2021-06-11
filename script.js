@@ -7,7 +7,7 @@ while (text !== 'quit') {
         text = prompt('Add a new item');
         todoList.push(text);
         console.log(todoList);
-        text = prompt('What would you like to do');
+        text = prompt('What would you like to do -  Select one from (new,list,delete,quit)');
     };
     if (text === 'list') {
         if (todoList.length === 0) {
@@ -17,7 +17,7 @@ while (text !== 'quit') {
             console.log(`${i}:${todoList[i]}`);
         };
         if (todoList.length > 0) {
-            text = prompt('What would you like to do');
+            text = prompt('What would you like to do - Select one from (new,list,delete,quit)');
         };
 
     };
@@ -34,7 +34,7 @@ while (text !== 'quit') {
             if (indexNo < todoList.length && indexNo >= 0) {
                 todoList.splice(indexNo, 1);
                 console.log(todoList);
-                text = prompt('What would you like to do');
+                text = prompt('What would you like to do -  Select one from (new,list,delete,quit)');
             };
 
         };
